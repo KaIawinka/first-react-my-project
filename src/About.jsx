@@ -36,7 +36,7 @@ class myComponent extends Component {
 	render() {
 		return (
 			<>
-				<h1 style={{fontSize: "2em"}}>My Component</h1>
+				<h1 style={{fontSize: "2em"}}>Калькулятор</h1>
 				<p style={{fontSize: "2em", marginTop: "20px"}}>{this.state.timer}</p>
 				<div style={{marginTop: "50px", display: "flex", flexDirection: "column", alignItems: "center"}}>
 					<button onClick={this.handlePlus} style={{width: "30%", marginTop: "10px"}}>Плюс</button>
