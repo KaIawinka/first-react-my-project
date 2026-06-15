@@ -5,14 +5,15 @@ const Contact = (props) => {
 		<>
 			<div style={{width: "30%",
 									 height: "280px",
-									 border: "1px solid gray",
 									 display: "flex",
 									 alignItems: "center",
 									 justifyContent: "center"}}>
 				<h3>
 					{props.name}
 					{props.age}
-					<img src={props.image} style={{width: "100%", height: "200px"}}></img>
+					<img src={props.image} style={{width: "100%",
+																				 height: "260px",
+																				 objectFit: "cover"}}></img>
 				</h3>
 			</div>
 		</>
