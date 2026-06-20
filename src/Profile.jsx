@@ -1,5 +1,4 @@
 import React from "react";
-import User from "./User.jsx";
 import Cart from "./Cart.jsx";
 
 const Profile = () => {
