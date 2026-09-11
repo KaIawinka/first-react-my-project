@@ -9,6 +9,7 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid 
 .brand { font-size: 28px; font-weight: 700; letter-spacing: -1px; }
 .brand span { color: #e05d3f; }
 nav { display: flex; gap: 30px; font: 13px Arial, sans-serif; color: #617068; }
+nav a { transition: color .2s ease; }
 nav a:hover { color: #e05d3f; }
 .cart-button { border: 1px solid #b8c3b9; border-radius: 50px; padding: 11px 16px; color: #23362d; background: transparent; cursor: pointer; font: 13px Arial, sans-serif; }
 .cart-button strong { display: inline-grid; place-items: center; min-width: 21px; height: 21px; margin-left: 8px; border-radius: 50%; color: #fff; background: #e05d3f; font-size: 11px; }
