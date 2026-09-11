@@ -11,7 +11,8 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid 
 nav { display: flex; gap: 30px; font: 13px Arial, sans-serif; color: #617068; }
 nav a { transition: color .2s ease; }
 nav a:hover { color: #e05d3f; }
-.cart-button { border: 1px solid #b8c3b9; border-radius: 50px; padding: 11px 16px; color: #23362d; background: transparent; cursor: pointer; font: 13px Arial, sans-serif; }
+.cart-button { border: 1px solid #b8c3b9; border-radius: 50px; padding: 11px 16px; color: #23362d; background: transparent; cursor: pointer; font: 13px Arial, sans-serif; transition: background .2s ease, color .2s ease; }
+.cart-button:hover { color: #f4f1e9; background: #23362d; }
 .cart-button strong { display: inline-grid; place-items: center; min-width: 21px; height: 21px; margin-left: 8px; border-radius: 50%; color: #fff; background: #e05d3f; font-size: 11px; }
 .hero { display: grid; grid-template-columns: minmax(0, 1fr) 180px; gap: 30px; padding: 104px 0 125px; border-bottom: 1px solid #d9d8ce; background: radial-gradient(circle at 80% 50%, #dfe7d7 0, transparent 32%); }
 .eyebrow { margin: 0 0 16px; color: #e05d3f; text-transform: uppercase; letter-spacing: 2px; font: 11px Arial, sans-serif; }
