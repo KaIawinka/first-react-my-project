@@ -48,3 +48,4 @@ footer { display: flex; justify-content: space-between; padding: 24px 0; border-
 footer span:first-child { color: #23362d; font: 18px Georgia, serif; font-weight: 700; }
 @media (max-width: 700px) { .store-header { min-height: 70px; } nav { display: none; } .hero { grid-template-columns: 1fr; padding: 70px 0 80px; } h1 { letter-spacing: -2px; } .hero-note { margin-top: 20px; } .catalog-tools { flex-direction: column; } .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .product-details { padding: 15px; } .product-details h3 { font-size: 20px; } footer { flex-direction: column; gap: 12px; } }
 @media (max-width: 440px) { .store-shell { padding: 0 20px; } .product-grid { grid-template-columns: 1fr; } .section-heading h2 { font-size: 36px; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; } }
