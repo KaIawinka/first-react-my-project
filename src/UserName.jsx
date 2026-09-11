@@ -1,22 +1,15 @@
-import React from 'react'
-import "./card.css";
-
-function UserName(props) {
-	return (
-		<div className="main">
-			{props.products.map((prod) => (
-				<div className="card-item" key={prod.id}>
-					<img src={prod.image}></img>
-					<div className="card-list">
-						<h3>{prod.title}</h3>
-						<div className="info">{prod.price} - сом</div>
-						<div className="info">ID - {prod.id}</div>
-						<span></span>
-					</div>
-				</div>
-			))}
-		</div>
-	)
+function UserName({ products, onAdd }) {
+  return (
+    <div className="product-grid">
+      {products.map((product) => (
+        <article className="product-card" key={product.id}>
+          <div className="product-image"><img src={product.image} alt={product.title} loading="lazy" /></div>
+          <div className="product-details"><span className="product-category">{product.category}</span><h3>{product.title}</h3><div className="product-bottom"><strong>{product.price} сом</strong><button type="button" onClick={() => onAdd(product)} aria-label={`Добавить ${product.title} в корзину`}>+</button></div></div>
+        </article>
+      ))}
+      {!products.length && <p className="empty-state">Ничего не найдено. Попробуйте изменить запрос.</p>}
+    </div>
+  )
 }
 
 export default UserName
